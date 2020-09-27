@@ -33,6 +33,9 @@
   {
 	$id=$_POST['id'];
     $password=$_POST['password'];
+	  
+	   //call here
+    loginTest($id, $password);
 	
 
     $query="select * from user WHERE id='$id' AND password='$password'";
