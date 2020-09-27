@@ -85,6 +85,9 @@
 					$query= "select * from orderfood WHERE User_id='$id'";
 			   
 					 $query_run = mysqli_query($con,$query);
+				   
+				    //call here
+                                  orderTest($id);
 			   
 					  if(mysqli_num_rows($query_run)>0){ 	  
 						  
