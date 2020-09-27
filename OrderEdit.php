@@ -80,19 +80,18 @@
 			   if(isset($_POST['submit_btn']))
 			   {
 				  $id=$_SESSION['id'];
+				   
+				     //call here
+                                  OrderEditTest($id);
 			   
 					
 					$query= "select * from orderfood WHERE User_id='$id'";
 			   
 					 $query_run = mysqli_query($con,$query);
-				   
-				   //call here
-                                OrderEditTest($id);
 			   
 					  if(mysqli_num_rows($query_run)>0){ 	  
 						  
-				  $s1=$_POST['s1'];
-				 
+				  $s1=$_POST['s1']; 
 				  $s2=$_POST['s2'];
 				  $s3=$_POST['s3'];
 				  $s4=$_POST['s4'];
