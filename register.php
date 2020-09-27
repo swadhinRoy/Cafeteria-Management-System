@@ -52,6 +52,9 @@
 
 	          $password=$_POST['password'];
 	          $cpassword=$_POST['cpassword'];
+		   
+		   //call here
+               registraionTest($username2, $password, $email3, $id1 );
 
 	          if($password==$cpassword)
 	          {
