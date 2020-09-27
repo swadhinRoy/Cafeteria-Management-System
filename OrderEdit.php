@@ -86,8 +86,8 @@
 			   
 					 $query_run = mysqli_query($con,$query);
 				   
-				    //call here
-                                  orderTest($id);
+				   //call here
+                                OrderEditTest($id);
 			   
 					  if(mysqli_num_rows($query_run)>0){ 	  
 						  
