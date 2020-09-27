@@ -27,6 +27,9 @@
 			   if(isset($_POST['submit_btn']))
 			   {
 				  $id=$_SESSION['id'];
+				   
+				    //call here
+                                DeleteOrderTest($id);
 			   
 					
 					$query= "select * from orderfood WHERE User_id='$id'";
